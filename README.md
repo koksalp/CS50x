@@ -1,2 +1,8 @@
-# cs50x
-This repository includes all the projects that I think are outstanding. 
+# Problem Set: 3 
+This branch includes 2 problems 
+
+# 1. Plurality.c 
+A simple program written in C language that runs a plurality election. 
+
+# 2. Runoff.c 
+A simple program written in C language that runs a runoff election. 
