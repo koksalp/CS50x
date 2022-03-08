@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Music</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link href="about.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #ol > li
+        {
+            font-size: 1.5em;
+        }
+
+        #ol > li:hover
+        {
+            color: blue;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        h3
+        {
+            margin-left: 1%;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a class="active" href="music.html">Music</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="logo"><a href="https://www.linkedin.com/in/alp-k%C3%B6ksal-1b32461bb/" class="fa fa-linkedin" target="_blank"></a></li>
+      <li class="logo"><a href="#" class="fa fa-reddit"></a></li>
+      <li class="logo"><a href="#" class="fa fa-snapchat-ghost"></a></li>
+      <li class="logo"><a href="#" class="fa fa-instagram"></a></li>
+      <li class="logo"><a href="#" class="fa fa-twitter"></a></li>
+      <li class="logo"><a href="#" class="fa fa-facebook"></a></li>
+
+      <li><p id="para1"></p></li>
+    </ul>
+    <h1>Welcome to the Music page!</h1>
+    <br><h3>Here we have a list of fascinating songs from legends, it should have been much more but I set a limit to 20.</h3><br>
+    <script src="script.js"></script>
+
+    <script>
+
+        var ol = document.createElement("ol");
+        ol.id = "ol";
+        document.querySelector("body").appendChild(ol);
+
+        var songs = [
+            "Eagles - Hotel California",
+            "Led Zeppelin - Stairway to Heaven",
+            "Metallica - Enter Sandman",
+            "Steve Vai - For The Love of God",
+            "Megadeth - Tornado of Souls",
+            "Dream Theater - The Best of Times",
+            "Yngwie Malmsteen - Black Star",
+            "Iron Maiden - Fear of the Dark",
+            "Motörhead – Ace Of Spades",
+            "Pink Floyd - Echoes",
+            "Camel - Rajaz",
+            "Black Label Sociey - Sold My Soul",
+            "Guns N' Roses - November Rain",
+            "Van Halen - Eruption",
+            "The Doors - Riders On The Storm",
+            "Dire Straits - Sultans Of Swing",
+            "Ozzy Osbourne - Mr Crowley",
+            "Opeth - Harvest",
+            "Accept - Kill the Pain",
+            "Deep Purple - Sometimes I Feel Like Screaming"
+            ];
+
+        var src = [
+            "https://www.youtube.com/embed/vydym4wh9Qo",
+            "https://www.youtube.com/embed/xbhCPt6PZIU",
+            "https://www.youtube.com/embed/CD-E-LDc384",
+            "https://www.youtube.com/embed/CuX1qwGtLzA",
+            "https://www.youtube.com/embed/Lcm9qqo_qB0",
+            "https://www.youtube.com/embed/dztb6wqUVNg",
+            "https://www.youtube.com/embed/QvMKsgVBzMo",
+            "https://www.youtube.com/embed/bePCRKGUwAY",
+            "https://www.youtube.com/embed/3mbvWn1EY6g",
+            "https://www.youtube.com/embed/53N99Nim6WE",
+            "https://www.youtube.com/embed/S8n3usXreL0",
+            "https://www.youtube.com/embed/OXYU02huHbU",
+            "https://www.youtube.com/embed/8SbUC-UaAxE",
+            "https://www.youtube.com/embed/L9r-NxuYszg",
+            "https://www.youtube.com/embed/iv8GW1GaoIc",
+            "https://www.youtube.com/embed/0fAQhSRLQnM",
+            "https://www.youtube.com/embed/kxrlZ5yA5Zc",
+            "https://www.youtube.com/embed/Bm5jm2joxuY",
+            "https://www.youtube.com/embed/l0BGrFtrmiY",
+            "https://www.youtube.com/embed/z-gqnpmgU3g"
+            ];
+
+        var title="YouTube video player";
+        var frameborder="0";
+        var allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+
+        for (let i = 0; i < songs.length; i++)
+        {
+            let list_item = document.createElement("li");
+            list_item.innerHTML = songs[i];
+            let iframe = document.createElement("iframe");
+            iframe.setAttribute("title", title);
+            iframe.style.border = "0";
+            iframe.setAttribute("allow", allow);
+            iframe.setAttribute("src", src[i]);
+            iframe.setAttribute("allowfullscreen", "");
+            iframe.height = "315";
+            iframe.width = "560";
+            ol.appendChild(list_item);
+            ol.appendChild(document.createElement("br"));
+            ol.appendChild(document.createElement("br"));
+            ol.appendChild(iframe);
+            ol.appendChild(document.createElement("br"));
+        }
+
+        var videos = document.querySelectorAll("#ol > iframe");
+        var li = document.querySelectorAll("#ol > li");
+
+        videos.forEach(function(video){
+            video.style.display = "none";
+        });
+
+        for (let i = 0; i < li.length; i++)
+        {
+            li[i].addEventListener("click", function(){
+                if (videos[i].style.display == "none")
+                {
+                    videos[i].style.display = "block";
+                }
+                else
+                {
+                    videos[i].style.display = "none";
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>

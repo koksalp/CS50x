@@ -1,0 +1,54 @@
+.button
+{
+    display: inline-block;
+    padding: 10px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: black;
+    font-size: 1em;
+    font-family: arial;
+    margin: 5px;
+
+
+}
+.button:hover
+{
+    background-color: black;
+    box-shadow: 2px 2px 5px grey;
+    color: white;
+    transition-duration: 0.5s;
+    text-align: center;
+}
+
+body
+{
+    background-color: #cccccc;
+}
+
+#main-div
+{
+    position: relative;
+
+    left: 550px;
+    top: 200px;
+}
+
+.counter
+{
+    position: relative;
+    left: 50px;
+    font-size: 4.5em;
+    margin: 0 0 30px 0;
+    font-family: arial;
+}
+
+#value
+{
+    position: relative;
+    left: 170px;
+    font-family: arial;
+    font-size: 7em;
+    color: green;
+    margin: 0;
+}

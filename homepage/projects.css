@@ -1,0 +1,39 @@
+.button
+{
+    padding: 5px;
+    color: white;
+    background-color: black;
+    font-size: 2em;
+    position: relative;
+    left: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.project-p
+{
+    display: inline;
+    margin-left: 20px;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 3em;
+}
+
+body
+{
+    background-color: #aaaacc;
+}
+
+.button:hover
+{
+    box-shadow: 5px 5px 5px white;
+}
+
+h2{
+    margin-left: 20px;
+}

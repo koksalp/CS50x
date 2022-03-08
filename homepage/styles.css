@@ -1,0 +1,106 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li:not(.logo) {
+  float: left;
+}
+
+li a
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active):not(.fa-reddit):not(.fa-facebook):not(.fa-instagram):not(.fa-twitter):not(.fa-linkedin):not(.fa-snapchat-ghost) {
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+}
+
+.active
+{
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+}
+
+.active:hover
+{
+  background-color: #4CEF50;
+  color: white;
+  text-decoration: none;
+}
+
+.logo
+{
+  float: right;
+  font-size: 1.5em;
+}
+
+.fa-reddit:hover
+{
+  background: #ff5700;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-facebook:hover
+{
+  background: #3B5998;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-twitter:hover
+{
+  background: #55ACEE;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-instagram:hover
+{
+  background: #125688;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-linkedin:hover
+{
+  background: #007bb5;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-snapchat-ghost:hover
+{
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-decoration: none;
+}
+
+#para1
+{
+  font-size: 1.5em;
+  color: white;
+  position: relative;
+  top: 5px;
+  right: 10%;
+}
+
+li:last-child
+{
+  float: right;
+}
