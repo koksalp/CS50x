@@ -1,3 +1,2 @@
 # cs50x
-All the projects I have done for CS50x 
- svrvrvs  
+This repository includes all the projects that I think are outstanding. 
