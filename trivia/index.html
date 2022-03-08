@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <!--Added an id in order to use querySelectorAll() more easily but it could have been used by class name-->
+            <div class="section" id="first_div">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+                <div class="question_div" onclick="function1(this)">6 people per 1 sheep</div>
+                <div class="question_div" onclick="function1(this)">3 people per 1 sheep</div>
+                <div class="question_div" onclick="function1(this)">1 people per 1 sheep</div>
+                <div class="question_div" onclick="function1(this)">1 people per 3 sheep</div>
+                <!--Correct answer has an id-->
+                <div class="question_div" id="correct1">1 people per 6 sheep</div>
+                <br/>
+                <p id="para1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+                <form>
+                    <input type="text" id="input"/>
+                    <div class="question_div" id="check_answer">Check Answer</div>
+                    <p id="para2"></p>
+                </form><br/>
+                <div class="question_div" id="finish_test">FINISH TEST</div>
+                <p id="para3"></p>
+            </div>
+        </div>
+        <!--External javascript file has been imported-->
+        <script src="script.js"></script>
+    </body>
+</html>
