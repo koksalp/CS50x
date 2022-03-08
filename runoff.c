@@ -150,8 +150,7 @@ void tabulate(void)
                 candidates[preferences[i][j]].votes += 1;
                 break;
             }
-        }
-        
+        }     
     }
 
     return;
@@ -189,8 +188,7 @@ bool print_winner(void)
                     // everytime a candidate has more votes than max update max and winner's name 
                     max = candidates[i].votes;
                     strcpy(winner, candidates[i].name);
-                }
-
+                } 
             }
             total_vote += candidates[i].votes;
         }
