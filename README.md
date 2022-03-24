@@ -20,7 +20,8 @@ popup.html contains all the HTML for the project.
 popup.css describes the styling of the elements in HTML file.
 Some elements should change color when hover or need to be placed well enough to make whole extension look good.
 Spaces between elements must be planned in such a way that it should not bother user.
-This is a small extension that contains only one page so there are not so many things to consider.
+This is a small extension that contains only one page so there are not so many things to consider. 
+
 popup.js file contains all the logic needed for the project.
 It describes what should happen when a button is clicked or anything else related to user interaction.
 API calls are used for several reasons.
@@ -31,6 +32,6 @@ When user enters a text and clicks on the translate button, a POST request is se
 Since this is a chrome extension, a file named manifest.json exists.
 It includes the necessary information that describes the characteristic of this extension and tells browser how it should behave when installed.
 
-Image files with .png extension are use to increase the visuality.
+Image files with .png extension are used to increase the visuality.
 The image named change.png is used for describing the button where user can switch between two languages.
-All the other images are just different size of the same image. Both of them needs to be in manifesst.json for several reasons.
+All the other images are just different size of the same image. Both of them needs to be in manifest.json for several reasons.
