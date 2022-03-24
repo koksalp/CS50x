@@ -1,0 +1,38 @@
+#change-icon
+{
+  position: relative;
+  top: 2px;
+}
+
+button:hover, #project_details  
+{
+  cursor: pointer;  
+}
+
+textarea 
+{
+  resize: none; 
+}
+
+.container 
+{
+  margin-top: 5px; 
+  margin-bottom: 5px; 
+}
+ 
+#input_text 
+{
+  margin-top: 5px; 
+}
+
+#translated_text 
+{
+  position: relative;
+  top: 5px; 
+  margin-bottom: 5px; 
+}
+
+#project_details:hover
+{
+  color: rgba(0, 0, 0, 0.6);
+}
