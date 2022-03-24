@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Translate Shortcut </title> 
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <h2>Translate your text!</h2>   
+    <h3 id="project_details">Project Details</h3>
+    <select id="input_list"></select> 
+    <button class="default">Default</button>
+    <textarea id="input_text" cols="30" rows="10" autofocus placeholder="Enter your text"></textarea>   
+
+    <div class="container">
+        <button type="button" id="translate">Translate</button>  
+        <button id="clear">Clear</button> 
+        <button id="change"><img src="change.png" alt="change icons" height="12" id="change-icon"></button> 
+    </div>  
+
+    <select id="output_list"></select>
+    <button class="default">Default</button>     
+    <textarea id="translated_text" cols="30" rows="10" disabled placeholder="Translation"></textarea>     
+      
+    <script src="popup.js"></script>
+</body>
+</html> 
