@@ -21,7 +21,7 @@ function set_languages()
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "translo.p.rapidapi.com",
-            "x-rapidapi-key": "37860be40amsh7dfdd14f8554a3ap1ff391jsnb274c13b59cc"
+            "x-rapidapi-key": "" // enter API key here 
         }
     })
     .then(response => response.json())
@@ -84,7 +84,7 @@ translate.addEventListener("click", () => {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "translo.p.rapidapi.com",
-            "x-rapidapi-key": "37860be40amsh7dfdd14f8554a3ap1ff391jsnb274c13b59cc"
+            "x-rapidapi-key": "" // enter API key here 
         }
     })
     .then(response => response.json())
