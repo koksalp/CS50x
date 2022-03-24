@@ -35,3 +35,6 @@ It includes the necessary information that describes the characteristic of this 
 Image files with .png extension are used to increase the visuality.
 The image named change.png is used for describing the button where user can switch between two languages.
 All the other images are just different size of the same image. Both of them needs to be in manifest.json for several reasons.
+
+# Important Note:
+An API key needs to be provided in order to use the API, I did not include my API key because even though it is a free API, there is a limit for number of requests which is 10000 requests/month and I need to pay for it after the limit is exceeded. Since the source code is accessible here, anyone could have accessed the API and sent as many requests as he wants using a simple for loop.    
